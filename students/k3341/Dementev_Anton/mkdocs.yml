@@ -1,0 +1,35 @@
+site_name: "Веб-разработка · Дементьев Антон (К3341)"
+site_description: "Лабораторные работы по курсу «Средства Web-программирования»"
+docs_dir: docs
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+nav:
+  - Главная: index.md
+  - "ЛР1 — FastAPI":
+      - "Обзор": lab1/index.md
+      - "Модели": lab1/models.md
+      - "БД и миграции": lab1/database.md
+      - "Аутентификация": lab1/auth.md
+      - "Эндпоинты": lab1/endpoints.md
+  - "ЛР2 — Потоки/Процессы/Async":
+      - "Обзор": lab2/index.md
+      - "Задача 1": lab2/task1.md
+      - "Задача 2": lab2/task2.md
+      - "Выводы": lab2/results.md
+  - "ЛР3 — Docker и очереди":
+      - "Обзор": lab3/index.md
+      - "Docker": lab3/docker.md
+      - "Celery": lab3/queue.md
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
